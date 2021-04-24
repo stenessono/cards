@@ -1,0 +1,193 @@
+a {
+  text-decoration: none;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content:space-evenly;
+}
+
+h1{
+  display: inline;
+  font-size:x-large;
+}
+
+.par1a, .par1b, .par11a, .par11b, .par111a, .par111b, .par2a, .par2b, .par22a, .par22b, .par222a, .par222b {
+  margin:0px;
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.icon1 {
+  grid-area: icon1;
+}
+
+.icon2 {
+  grid-area: icon2;
+}
+
+.h1_icon {
+  grid-area: h1_icon;
+}
+
+.h1_icon1 {
+  grid-area: h1_icon1;
+}
+
+.h1_icon2 {
+  grid-area: h1_icon2;
+}
+
+.par1 {
+  grid-area: par1;
+}
+
+.par1a {
+  grid-area: par1a;
+}
+
+.par1b {
+  grid-area: par1b;
+}
+
+.par11 {
+  grid-area: par11;
+}
+
+.par11a {
+  grid-area: par11a;
+}
+
+.par11b {
+  grid-area: par11b;
+}
+
+.par111 {
+  grid-area: par111;
+}
+
+.par111a {
+  grid-area: par111a;
+}
+
+.par111b {
+  grid-area: par111b;
+}
+
+.par2 {
+  grid-area: par2;
+}
+
+.par2a {
+  grid-area: par2a;
+  font-size:  12px;
+}
+
+.par2b {    
+  grid-area: par2b;
+  text-align: right;
+  padding: 2px;
+  margin: 10px;
+}
+
+.par22 {
+  grid-area: par22;
+}
+
+.par22a {
+  grid-area: par22a;
+  font-size:  12px;
+}
+
+.par22b {
+  grid-area: par22b;
+  text-align: right;
+  padding: 2px;
+  margin: 10px;
+}
+
+.par222 {
+  grid-area: par222;
+}
+
+.par222a {
+  grid-area: par222a;
+  font-size:  12px;
+}
+
+.par222b {
+  grid-area: par222b;
+  text-align: right;
+  padding: 2px;
+  margin: 10px;
+}
+
+.icon, .icon1, .icon2{
+  width: 65px;
+  height: 65px;
+}
+
+.card1{
+  /*grid-area: card1;*/
+  display: grid;
+  grid-template-columns: auto 71%;
+  grid-template-rows: 35% 20% 20%;
+  grid-template-areas: 
+  "icon h1_icon"
+  "  .   par1a"
+  "  .   par1b"
+  "par2a par2b";
+  box-shadow: 10px 10px 5px grey;
+  width:300px;
+  border: 3px solid;
+  padding: 10px
+}
+
+
+.card2 {
+  /*grid-area: card2;*/
+  display: grid;
+  grid-template-columns: auto 71%;
+  grid-template-rows: 35% 20% 20%;
+  grid-template-areas: 
+  "icon1 h1_icon1"
+  "  .   par11a"
+  "  .   par11b"
+  "par22a par22b";
+  box-shadow: 10px 10px 5px grey;
+  width:300px;
+  border: 3px solid;
+  padding: 10px
+}
+
+.card3 {
+  /*grid-area: card3;*/
+  display: grid;
+  grid-template-columns: auto 71%;
+  grid-template-rows: 35% 20% 20%;
+  grid-template-areas: 
+  "icon2 h1_icon2"
+  "  .   par111a"
+  "  .   par111b"
+  "par222a par222b";
+  box-shadow: 10px 10px 5px grey;
+  width:300px;
+  border: 3px solid;
+  padding: 10px
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  background-color: yellow;
+}
+
+
+
+@media (max-width:500px) {
+  .container{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
